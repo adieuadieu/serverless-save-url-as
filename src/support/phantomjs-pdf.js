@@ -1,4 +1,5 @@
 /* phantomjs pdf.js http://google.com/ test.pdf 1120px*800px */
+// Inspired by https://github.com/ariya/phantomjs/blob/master/examples/rasterize.js
 
 var page = require('webpage').create(),
     system = require('system'),
@@ -37,7 +38,7 @@ if (system.args.length < 3 || system.args.length > 5) {
         page.zoomFactor = system.args[4];
     }
 
-    page.settings.resourceTimeout = 1000 * 30;
+    page.settings.resourceTimeout = 1000 * 5;
 
     var requested = [];
     var received = [];
@@ -83,7 +84,7 @@ if (system.args.length < 3 || system.args.length > 5) {
             window.setTimeout(function () {
                 page.render(output);
                 phantom.exit(0);
-            }, 1000 * 60 * 3);
+            }, 1000 * 60);
         }
     });
 }

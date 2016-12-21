@@ -2,6 +2,7 @@
 import test from 'ava'
 import handler from './phantom'
 
+// const testUrl = 'http://ariya.github.io/svg/tiger.svg'
 const testUrl = 'https://github.com/avajs/ava'
 const testOptions = {}
 
