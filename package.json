@@ -1,0 +1,132 @@
+{
+  "name": "serverless-save-url-as",
+  "version": "0.0.1",
+  "description": "Lambda-based micro-service to save a given URL as a JPEG, PNG, PDF, etc.",
+  "main": "src/",
+  "config": {
+    "jsSrc": "src/"
+  },
+  "scripts": {
+    "test": "ava",
+    "watch:test": "ava --watch",
+    "lint": "npm run lint:eslint -s",
+    "lint:eslint": "eslint $npm_package_config_jsSrc",
+    "deploy": "npm test && serverless deploy -v",
+    "postinstall": "cpy config.sample.json config.json && cpy event.sample.json event.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adieuadieu/serverless-save-url-as.git"
+  },
+  "keywords": [
+    "graphql",
+    "phantomjs",
+    "lambda",
+    "serverless",
+    "save",
+    "as",
+    "pdf",
+    "jpeg",
+    "raster",
+    "document",
+    "url",
+    "png",
+    "json"
+  ],
+  "author": "Marco Lüthy",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/adieuadieu/serverless-save-url-as/issues"
+  },
+  "homepage": "https://github.com/adieuadieu/serverless-save-url-as",
+  "dependencies": {
+    "graphql": "0.8.2",
+    "request": "2.79.0"
+  },
+  "devDependencies": {
+    "ava": "0.17.0",
+    "babel-cli": "6.18.0",
+    "babel-core": "6.21.0",
+    "babel-eslint": "7.1.1",
+    "babel-loader": "6.2.10",
+    "babel-plugin-transform-runtime": "6.15.0",
+    "babel-polyfill": "6.20.0",
+    "babel-preset-env": "1.1.4",
+    "babel-preset-es2016": "6.16.0",
+    "babel-preset-es2017": "6.16.0",
+    "babel-preset-stage-3": "6.17.0",
+    "babel-register": "6.18.0",
+    "eslint": "3.12.2",
+    "eslint-config-airbnb-base": "11.0.0",
+    "eslint-plugin-ava": "4.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-promise": "3.4.0",
+    "json-loader": "0.5.4",
+    "serverless": "1.4.0",
+    "serverless-webpack": "1.0.0-rc.2",
+    "webpack": "1.14.0"
+  },
+  "ava": {
+    "require": "babel-register",
+    "babel": "inherit"
+  },
+  "babel": {
+    "plugins": [
+      "transform-runtime"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "4.3.2"
+          }
+        }
+      ],
+      "es2015",
+      "es2016",
+      "es2017",
+      "stage-3"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "ava",
+      "import"
+    ],
+    "extends": [
+      "airbnb-base",
+      "plugin:ava/recommended"
+    ],
+    "settings": {
+      "import/parser": "babel-eslint",
+      "import/resolve": {
+        "moduleDirectory": [
+          "node_modules",
+          "src"
+        ]
+      }
+    },
+    "rules": {
+      "no-console": 0,
+      "max-len": [
+        2,
+        140,
+        2
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "space-before-function-paren": [
+        "error",
+        "always"
+      ]
+    }
+  }
+}
