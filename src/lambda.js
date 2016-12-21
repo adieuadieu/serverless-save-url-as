@@ -6,6 +6,24 @@ import {
 } from 'graphql'
 import config from '../config.json'
 
+
+/*
+{
+  save(url: "http://google.com/") {
+    as(preset: pdf)
+  }
+
+  convert(url: "http://google.com/") {
+    to(output: { format: pdf }) {
+      save(to: s3)
+      resultUrl
+      resultDataUri
+    }
+  }
+}
+*/
+
+
 const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: 'RootQueryType',

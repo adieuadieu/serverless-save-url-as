@@ -43,6 +43,7 @@
     "aws-sdk": "2.7.16",
     "graphql": "0.8.2",
     "phantomjs": "2.1.7",
+    "phantomjs-prebuilt": "2.1.14",
     "request": "2.79.0"
   },
   "devDependencies": {
