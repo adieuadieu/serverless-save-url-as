@@ -39,7 +39,11 @@ functions:
     events:
       - http:
           path: graphql
-          method: get post
+          method: get
+          cors: ${file(config.json):enableCors}
+      - http:
+          path: graphql
+          method: post
           cors: ${file(config.json):enableCors}
 
 #    The following are a few example events you can configure
