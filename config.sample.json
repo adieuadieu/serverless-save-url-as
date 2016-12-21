@@ -1,0 +1,19 @@
+{
+  "name": "serverless-save-as-url",
+  "provider": {
+    "profile": "serverless-admin",
+    "stage": "dev",
+    "region": "us-west-2"
+  },
+  "outputBucket": "dev-serverless-save-as-url",
+  "outputBucket": "",
+  "enableCors": true,
+  "s3ObjectTtl": 0,
+  "s3": {
+    "params": {
+      "Metadata": {
+        "generator": "created by a serverless-sharp-image lambda function"
+      }
+    }
+  }
+}

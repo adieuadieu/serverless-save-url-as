@@ -40,6 +40,7 @@
   },
   "homepage": "https://github.com/adieuadieu/serverless-save-url-as",
   "dependencies": {
+    "aws-sdk": "2.7.16",
     "graphql": "0.8.2",
     "request": "2.79.0"
   },
@@ -56,6 +57,7 @@
     "babel-preset-es2017": "6.16.0",
     "babel-preset-stage-3": "6.17.0",
     "babel-register": "6.18.0",
+    "cpy-cli": "1.0.1",
     "eslint": "3.12.2",
     "eslint-config-airbnb-base": "11.0.0",
     "eslint-plugin-ava": "4.0.0",
@@ -64,6 +66,7 @@
     "json-loader": "0.5.4",
     "serverless": "1.4.0",
     "serverless-webpack": "1.0.0-rc.2",
+    "tar.gz": "1.0.5",
     "webpack": "1.14.0"
   },
   "ava": {
