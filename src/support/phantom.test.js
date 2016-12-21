@@ -2,11 +2,12 @@
 import test from 'ava'
 import handler from './phantom'
 
-const testUrl = 'http://google.com/'
+const testUrl = 'https://github.com/avajs/ava'
 const testOptions = {}
 
 test('phantomjs handler()', async (t) => {
-  /*try {
+  /*
+  try {
     await handler(testUrl, testOptions)
     t.fail('Should throw error when event name is invalid.')
   } catch (error) {

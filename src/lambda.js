@@ -4,7 +4,7 @@ import {
   GraphQLObjectType,
   GraphQLString,
 } from 'graphql'
-import config from '../config.json'
+import config from './config'
 
 
 /*
