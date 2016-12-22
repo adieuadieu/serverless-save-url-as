@@ -1,4 +1,5 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
+import fs from 'fs'
 import test from 'ava'
 import handler from './phantom'
 
@@ -30,4 +31,6 @@ test('phantomjs handler()', async (t) => {
   console.log(result)
   //t.is(result.length, 1, 'Number of objects uploaded to S3 should match the number of outputs defined in config.')
   t.true(result.length > 0, 'Returns a file path string')
+
+  //fs.unlink(result, console.error)
 })
