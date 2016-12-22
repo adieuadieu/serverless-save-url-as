@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/adieuadieu/serverless-save-url-as",
   "dependencies": {
-    "aws-sdk": "2.7.16",
+    "aws-sdk": "^2.7.18",
     "graphql": "0.8.2",
     "phantomjs-prebuilt": "2.1.14",
     "request": "2.79.0"
