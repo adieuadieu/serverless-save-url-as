@@ -337,9 +337,9 @@ aws-sdk@^2.7.13:
     xml2js "0.4.15"
     xmlbuilder "2.6.2"
 
-aws-sdk@^2.7.18:
-  version "2.7.18"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.7.18.tgz#7cd17fb8f583ef2d3d7d995ff1b7108634a507be"
+aws-sdk@^2.7.19:
+  version "2.7.19"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.7.19.tgz#63a0dfae44e7aab182cad05d5e60277f755ad80e"
   dependencies:
     buffer "4.9.1"
     crypto-browserify "1.0.9"
@@ -4108,9 +4108,9 @@ serve-static@~1.11.1:
     parseurl "~1.3.1"
     send "0.14.1"
 
-serverless-webpack@1.0.0-rc.2:
-  version "1.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/serverless-webpack/-/serverless-webpack-1.0.0-rc.2.tgz#bf1b16b2e60f6507e469067c07bfaaf13cd23bc4"
+serverless-webpack@^1.0.0-rc.3:
+  version "1.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/serverless-webpack/-/serverless-webpack-1.0.0-rc.3.tgz#7fd209a79119cf3b1f0f156434d42740dc217f76"
   dependencies:
     bluebird "^3.4.0"
     body-parser "^1.15.2"
